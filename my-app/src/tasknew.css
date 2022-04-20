@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+  
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:rgb(174, 255, 241);
+    
+    
+  }
