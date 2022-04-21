@@ -10,38 +10,16 @@ import SearchUserContainer from './SearchUserContainer';
 import DisplayRecords from './DisplayRecords';
 import './DisplayRecords.css';
 
-import {
-  BrowserRouter as Router,
-  Routes,Route,
-}from 'react-router-dom';
-
-
-
 function App() {
   return (
     <div className="main">
       <Nav/>
       <SearchUserContainer/>     
-     <AdduserForm />
-     <DisplayRecords/> 
-
-  {/*<Router>
-    <Routes> 
-      <Nav/>
-      <Route path ="/" >App</Route>
-      <Route path ="/addUserform">AdduserForm</Route>
-      
-   
-    </Routes>
-    </Router>*/}
-
-
-
-
+      {/* <AdduserForm /> */}
+      <DisplayRecords/>
 
      
     </div>
-
   );
 }
 
