@@ -1,14 +1,15 @@
 import './App.css';
 import './Navbar.css';
 import Nav from './Navbar-user';
-import SearchBar from './Search-user';
-import AddUser from './AdduserButton';
+//import SearchBar from './Search-user';
+//import AddUser from './AdduserButton';
 import AdduserForm from './addUserform';
 import './search.css';
 import './addUser.css';
-import SearchUserContainer from './SearchUserContainer';
-import DisplayRecords from './DisplayRecords';
+//import SearchUserContainer from './SearchUserContainer';
+//import DisplayRecords from './DisplayRecords';
 import './DisplayRecords.css';
+import CommonDisplayContainer from './CommonDisplayContainer';
 
 import {
   BrowserRouter as Router,
@@ -19,28 +20,16 @@ import {
 
 function App() {
   return (
-    <div className="main">
-      <Nav/>
-      <SearchUserContainer/>     
-     <AdduserForm />
-     <DisplayRecords/> 
-
-  {/*<Router>
+    <Router>
+    <Nav/>
+        
     <Routes> 
-      <Nav/>
-      <Route path ="/" >App</Route>
-      <Route path ="/addUserform">AdduserForm</Route>
-      
-   
-    </Routes>
-    </Router>*/}
 
-
-
-
-
+     <Route path ="/" element={<CommonDisplayContainer/>}/>
+     <Route path ="/addUserform" element={<AdduserForm/>}/>
      
-    </div>
+    </Routes>
+    </Router>
 
   );
 }
