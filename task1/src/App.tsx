@@ -30,7 +30,7 @@ function App() {
 
     <Router>
       <Routes>
-        {/* <Route path="/" element={<TaskBirthday  />} /> */}
+        <Route path="/" element={<TaskBirthday userData={usersData} />} />
         <Route path="list" element={<BdayList userData={usersData} />} />
       
       </Routes>
