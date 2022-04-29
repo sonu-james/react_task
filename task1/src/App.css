@@ -1,0 +1,9 @@
+body{
+  background-color: bisque;
+}
+
+textarea{
+  height :500px;
+  width:500px;
+  display: flex;
+}
